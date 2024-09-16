@@ -5,6 +5,8 @@ class Moto(Veiculo):
         super().__init__(marca, modelo, placa, ano)
         self.__cilindradas = cilindradas
 
-moto = Moto("Honda", "Falcon NX4", "ABC", 2005, 400)
-
-print(moto)
+    #Override - Subscrever o método __str__()
+    def __str__(self):
+        ret = super ().__str__()
+        return f'''{ret}
+        - Cilindradas: {self.__cilindradas}'''

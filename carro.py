@@ -8,4 +8,4 @@ class Carro(Veiculo):
     def __str__(self):
         ret = super ().__str__()
         return f'''{ret}
-        - Num. Portas: {self.__nPortas}'''
+    - Num. Portas: {self.__nPortas}'''

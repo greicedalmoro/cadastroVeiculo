@@ -3,11 +3,12 @@ os.system('clear')
 
 class Veiculo:
     # __init__ => é o método construtor
-    def __init__(self, marca, modelo, placa, ano):
+    def __init__(self, marca, modelo, placa, ano, nPortas=None):
         self.__marca = marca
         self.__modelo = modelo
         self.__placa = placa
         self.__ano = ano
+        self.__nPortas = nPortas
 
     def get_marca(self):
         return self.__marca
@@ -29,6 +30,16 @@ class Veiculo:
     def set_ano(self, ano):
         self.__ano = ano    
 
+    def get_nPortas(self):
+        return self.__nPortas
+    def set_nPortas(self, nPortas):
+        self.__nPortas = nPortas
+
+    def get_capacidade(self):
+        return self.__capacidade
+    def set_capacidade(self, capacidade):
+        self.__capacidade = capacidade
+
     # Método de Instância
     def calcularTempoUso(self):
         return 2024 - self.__ano
@@ -38,4 +49,5 @@ class Veiculo:
  - Modelo: {self.__modelo}
  - Placa: {self.__placa}
  - Ano: {self.__ano}'''
+    
 

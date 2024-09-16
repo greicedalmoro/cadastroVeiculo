@@ -43,6 +43,7 @@ def listar():
             print(f"Veículos: {i}")
             print(f"{veiculo}")
             i +=1
+    print()
     input("Pressione Enter para continuar...")
               
 def excluir():
@@ -59,7 +60,8 @@ def excluir():
         print("Veículo excluído")
     else:
         print("Veículo não encontrado")
-
+    
+    print()
     input("Pressione Enter para continuar...")            
     
 
@@ -90,4 +92,5 @@ while True:
     else:
         print("Opção Inválida")
 
+        print()
         input("Pressione Enter para continuar...")
